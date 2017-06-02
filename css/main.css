@@ -40,12 +40,14 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  line-height: 11vw;
 }
 
 .nav-bar-text a {
   text-decoration: none;
   font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #home {
@@ -53,7 +55,6 @@ body {
   color: #FFFFFF;
   width: 100%;
   height: 100%;
-  text-align: center;
 }
 
 #calendar {
@@ -61,7 +62,6 @@ body {
   color: #FFFFFF;
   width: 100%;
   height: 100%;
-  text-align: center;
 }
 
 #join {
@@ -69,7 +69,6 @@ body {
   color: #FFFFFF;
   width: 100%;
   height: 100%;
-  text-align: center;
 }
 
 .paragraph1 {
@@ -250,15 +249,95 @@ body {
 }
 
 @media screen and (min-width: 545px) {
+  .nav-bar {
+    min-height: 0;
+  }
   .nav-bar img {
-    background-color: green;
+    background-color: #F5005B;
+    width: 13vw;
+    height: 15vw;
+    padding: 1.5vw;
   }
   .nav-bar-text {
     flex-direction: row;
+    font-size: 0.6em;
   }
-  /*.blank {
+  .nav-bar-text a {
+    max-width: 18%;
+    flex-grow: 0;
+  }
+  .nav-bar-text div {
+    flex-grow: 1;
+  }
+  .blank {
     background-color: #7DDFE8;
     min-width: 1vw;
     flex-grow: 1;
-  }*/
+  }
+  .paragraph1 h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .main-p {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .main-p div {
+    width: 30%;
+  }
+  .main-p h2 {
+    font-size: 1.7em;
+    padding: 1vw 2vw;
+  }
+  .main-p p {
+    line-height: 4vw;
+    font-size: 1em;
+  }
+  .upnext h1 {
+    margin-top: 1vw;
+    font-size: 3em;
+    padding-left: 1em;
+    margin-bottom: .5em;
+  }
+  .block1 {
+    margin-left: 2vw;
+    width: 86%;
+  }
+  .block1text {
+    font-size: 1.5em;
+  }
+  .block1text ul {
+    line-height: normal;
+    padding-left: 3vw;
+  }
+  .block2 {
+    margin-left: 2vw;
+    width: 86%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vw;
+    padding-top: 2vw;
+  }
+  .block2 img {
+    height: 30vw;
+  }
+  .footer {
+    flex-direction: row;
+    font-size: 0.6em;
+  }
+  .footer a {
+    max-width: 15%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.23vw 0;
+  }
+  .footer h4 {
+    flex-grow: 1;
+    font-weight: lighter;
+    text-align: right;
+    padding-right: 2vw;
+  }
 }
