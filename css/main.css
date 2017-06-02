@@ -18,7 +18,10 @@ copyright text: #FFFFFF*/
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 body {
   font-family: PT Sans;
-  color: #0B1942
+  color: #0B1942;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
 }
 
 .nav-bar {
@@ -94,6 +97,7 @@ body {
 
 .upnext {
   background-color: #0B1942;
+  padding-bottom: 10vh;
 }
 
 .upnext h1 {
@@ -118,10 +122,143 @@ body {
 
 .block1text {
   flex-grow: 1;
-  font-size: 2.5em;
   padding-left: 4vw;
+}
+
+.block1text a {
+  color: #00B7D3;
+  font-size: 1.2em;
+}
+
+.block1text h6 {
+  font-size: .8em;
+  margin-top: 2vw;
+  border-bottom: 2px solid black;
+  padding-bottom: 6vw;
+  margin-bottom: 5vw;
+}
+
+.block1text span {
+  font-weight: lighter;
+}
+
+.block1text h5 {
+  margin: 0
+}
+
+.block1text ul {
+  line-height: 7vw;
+  font-size: .9em;
+  margin-top: 3vw;
+  list-style-type: circle;
+  margin-bottom: 0;
 }
 
 .block2 {
   background-color: #E2E2E2;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-left: 5vw;
+  padding: 5vw;
+  width: 80%;
+  margin-top: 4vw;
+}
+
+.block2 a {
+  display: block;
+  color: #00B7D3;
+  padding-top: 1vw;
+}
+
+#lil-a {
+  font-size: .95em;
+}
+
+.block2 img {
+  height: 54vw;
+}
+
+.line1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.line2 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.block2 .img1 {
+  padding-right: 2.9vw;
+}
+
+.block2 .img3 {
+  padding-right: 2.9vw;
+}
+
+.block2 h6 {
+  font-size: 1em;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+}
+
+.block2 span {
+  font-weight: lighter;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer a {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  text-decoration: none;
+  font-size: 2em;
+  color: #FFFFFF;
+  min-height: 12vw;
+  line-height: 11vw;
+}
+
+.footer a:first-child {
+  background-color: #00A5BF;
+}
+
+.footer a:nth-child(2) {
+  background-color: #00B7D3;
+}
+
+.footer a:nth-child(3) {
+  background-color: #00D5E7;
+}
+
+.footer h4 {
+  background-color: #7DDFE8;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  font-size: 2em;
+  margin: 0;
+  color: #FFFFFF;
+  padding: 7.5vw 0;
+}
+
+@media screen and (min-width: 545px) {
+  .nav-bar img {
+    background-color: green;
+  }
+  .nav-bar-text {
+    flex-direction: row;
+  }
+  /*.blank {
+    background-color: #7DDFE8;
+    min-width: 1vw;
+    flex-grow: 1;
+  }*/
 }
