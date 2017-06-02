@@ -221,8 +221,7 @@ body {
   text-decoration: none;
   font-size: 2em;
   color: #FFFFFF;
-  min-height: 12vw;
-  line-height: 11vw;
+  padding: 3vw 0;
 }
 
 .footer a:first-child {
@@ -245,7 +244,8 @@ body {
   font-size: 2em;
   margin: 0;
   color: #FFFFFF;
-  padding: 7.5vw 0;
+  font-weight: lighter;
+  padding: 8vw 0;
 }
 
 @media screen and (min-width: 545px) {
@@ -332,12 +332,114 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3.23vw 0;
+    height: 100%;
+    padding: 8vw 0;
   }
   .footer h4 {
     flex-grow: 1;
     font-weight: lighter;
     text-align: right;
+    height: 100%;
+    padding: 8vw 0;
     padding-right: 2vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav-bar img {
+    height: 10vw;
+    width: 8vw;
+  }
+  .nav-bar-text {
+    font-size: .8em;
+  }
+  .nav-bar-text a {
+    max-width: 15%;
+    flex-grow: 0;
+  }
+  .main-p p {
+    line-height: 2vw;
+    font-size: 1.4em;
+  }
+  .bigflex {
+    display: flex;
+  }
+  .block1 {
+    width: 37%;
+    height: 50%;
+    padding: 2vw;
+  }
+  .block1 img {
+    height: 30vw;
+  }
+  .block2 {
+    flex-direction: column;
+    width: 37%;
+    margin-top: 0;
+    padding-bottom: 3vw;
+  }
+  .line1 {
+    margin-left: -3vw;
+  }
+  .img1 {
+    padding-right: 1vw;
+  }
+  .block1text {
+    padding-left: 1vw;
+  }
+  .block1text h6 {
+    margin-top: 0;
+    padding-bottom: 2vw;
+    margin-bottom: 0;
+  }
+  .block1text h5 {
+    padding-top: 2vw;
+  }
+  .block1text ul {
+    margin-top: 1vw;
+    padding-left: 2vw;
+  }
+  .line2 {
+    margin-left: -3vw;
+  }
+  .block2 .img1 {
+    padding-right: 1vw;
+  }
+  .block2 .img3 {
+    padding-right: 1vw;
+  }
+  .line1 a {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+  }
+  .line1 h6 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  .line2 a {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+  }
+  .line2 h6 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  #lil-a {
+    font-size: 1.5em;
+  }
+  .footer {
+    font-size: .8em;
+  }
+  .footer a {
+    max-width: 15%;
+    height: 100%;
+    padding: 5vw 0;
+  }
+  .footer h4 {
+    height: 100%;
+    padding-right: 3vw !important;
+    padding: 5vw 0;
   }
 }
