@@ -48,6 +48,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 #home {
@@ -133,6 +134,7 @@ span {
   font-size: 1em;
   color: #FFFFFF;
   padding: 3vw 0;
+  cursor: pointer;
 }
 
 .footer a:first-child {
@@ -157,4 +159,102 @@ span {
   color: #FFFFFF;
   font-weight: lighter;
   padding: 8vw 0;
+}
+
+@media screen and (min-width: 545px) {
+  .nav-bar {
+    min-height: 0;
+  }
+  .nav-bar img {
+    background-color: #F5005B;
+    width: 13vw;
+    height: 15vw;
+    padding: 1.5vw;
+  }
+  .nav-bar-text {
+    flex-direction: row;
+    font-size: 1em;
+  }
+  .nav-bar-text a {
+    max-width: 18%;
+    flex-grow: 0;
+  }
+  .nav-bar-text div {
+    flex-grow: 1;
+  }
+  .blank {
+    background-color: #7DDFE8;
+    min-width: 1vw;
+    flex-grow: 1;
+  }
+  h1 {
+    padding: 0 2vw;
+  }
+  .calendar h1 {
+    padding: 4vw;
+  }
+  span {
+    padding: 1vw;
+    font-size: 1.5em;
+  }
+  .table {
+    padding-bottom: 5vw;
+  }
+  .footer {
+    flex-direction: row;
+    font-size: 1em;
+  }
+  .footer a {
+    max-width: 15%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    min-height: 15vw;
+  }
+  .footer h4 {
+    flex-grow: 1;
+    font-weight: lighter;
+    text-align: right;
+    height: 100%;
+    padding: 0;
+    padding-right: 2vw;
+    min-height: 15vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav-bar img {
+    height: 10vw;
+    width: 8vw;
+  }
+  .nav-bar-text {
+    font-size: 1em;
+  }
+  .nav-bar-text a {
+    max-width: 15%;
+    flex-grow: 0;
+  }
+  .calendar h1 {
+    padding: 2vw;
+  }
+  .footer {
+    font-size: 1em;
+  }
+  .footer a {
+    max-width: 15%;
+    height: 100%;
+    font-size: 1em;
+    min-height: 15vw;
+  }
+  .footer h4 {
+    height: 100%;
+    padding-right: 3vw !important;
+    min-height: 15vw;
+  }
 }
